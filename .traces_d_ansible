@@ -118,3 +118,70 @@
 2025-09-29 09:23:22,357 p=3376 u=deploy n=ansible INFO| ok: [srv-apache-1]
 2025-09-29 09:23:22,358 p=3376 u=deploy n=ansible INFO| PLAY RECAP *************************************************************************************************************
 2025-09-29 09:23:22,358 p=3376 u=deploy n=ansible INFO| srv-apache-1               : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-09-29 09:33:06,768 p=3490 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] ***************************************************************
+2025-09-29 09:33:06,774 p=3490 u=deploy n=ansible INFO| TASK [Gathering Facts] *******************************************************************************
+2025-09-29 09:33:06,964 p=3490 u=deploy n=ansible INFO| fatal: [srv-apache-1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '10.100.2.22' (ED25519) to the list of known hosts.\r\ndeploy@10.100.2.22: Permission denied (publickey,password).", "unreachable": true}
+2025-09-29 09:33:06,965 p=3490 u=deploy n=ansible INFO| PLAY RECAP *******************************************************************************************
+2025-09-29 09:33:06,965 p=3490 u=deploy n=ansible INFO| srv-apache-1               : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-09-29 09:34:32,024 p=3499 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] ***************************************************************
+2025-09-29 09:34:32,030 p=3499 u=deploy n=ansible INFO| TASK [Gathering Facts] *******************************************************************************
+2025-09-29 09:34:32,216 p=3499 u=deploy n=ansible INFO| fatal: [srv-apache-1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '10.100.2.22' (ED25519) to the list of known hosts.\r\ndeploy@10.100.2.22: Permission denied (publickey,password).", "unreachable": true}
+2025-09-29 09:34:32,216 p=3499 u=deploy n=ansible INFO| PLAY RECAP *******************************************************************************************
+2025-09-29 09:34:32,216 p=3499 u=deploy n=ansible INFO| srv-apache-1               : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-09-29 09:34:40,035 p=3505 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] ***************************************************************
+2025-09-29 09:34:40,041 p=3505 u=deploy n=ansible INFO| TASK [Gathering Facts] *******************************************************************************
+2025-09-29 09:34:40,232 p=3505 u=deploy n=ansible INFO| fatal: [srv-apache-1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '10.100.2.22' (ED25519) to the list of known hosts.\r\ndeploy@10.100.2.22: Permission denied (publickey,password).", "unreachable": true}
+2025-09-29 09:34:40,233 p=3505 u=deploy n=ansible INFO| PLAY RECAP *******************************************************************************************
+2025-09-29 09:34:40,233 p=3505 u=deploy n=ansible INFO| srv-apache-1               : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-09-29 09:36:15,303 p=3514 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] ***************************************************************
+2025-09-29 09:36:15,309 p=3514 u=deploy n=ansible INFO| TASK [Gathering Facts] *******************************************************************************
+2025-09-29 09:36:15,508 p=3514 u=deploy n=ansible INFO| fatal: [srv-apache-1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '10.100.2.22' (ED25519) to the list of known hosts.\r\ndeploy@10.100.2.22: Permission denied (publickey,password).", "unreachable": true}
+2025-09-29 09:36:15,509 p=3514 u=deploy n=ansible INFO| PLAY RECAP *******************************************************************************************
+2025-09-29 09:36:15,509 p=3514 u=deploy n=ansible INFO| srv-apache-1               : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-09-29 09:38:12,356 p=3529 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] ***************************************************************
+2025-09-29 09:38:12,363 p=3529 u=deploy n=ansible INFO| TASK [Gathering Facts] *******************************************************************************
+2025-09-29 09:38:15,366 p=3529 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:38:15,368 p=3529 u=deploy n=ansible INFO| TASK [INSTALL DEPENDANCES DOCKER] ********************************************************************
+2025-09-29 09:38:18,334 p=3529 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:38:18,337 p=3529 u=deploy n=ansible INFO| TASK [AJOUT CLE GPG DE DOCKER] ***********************************************************************
+2025-09-29 09:38:19,297 p=3529 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:38:19,304 p=3529 u=deploy n=ansible INFO| TASK [AJOUT DEPOT APT DE DOCKER] *********************************************************************
+2025-09-29 09:38:20,040 p=3529 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:38:20,045 p=3529 u=deploy n=ansible INFO| TASK [INSTALL DOCKER] ********************************************************************************
+2025-09-29 09:38:22,979 p=3529 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:38:22,985 p=3529 u=deploy n=ansible INFO| TASK [DEMARRE DOCKER] ********************************************************************************
+2025-09-29 09:38:23,751 p=3529 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:38:23,752 p=3529 u=deploy n=ansible INFO| PLAY RECAP *******************************************************************************************
+2025-09-29 09:38:23,752 p=3529 u=deploy n=ansible INFO| srv-apache-1               : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-09-29 09:38:37,717 p=3587 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] ***************************************************************
+2025-09-29 09:38:37,724 p=3587 u=deploy n=ansible INFO| TASK [Gathering Facts] *******************************************************************************
+2025-09-29 09:38:39,668 p=3587 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:38:39,672 p=3587 u=deploy n=ansible INFO| TASK [INSTALL DEPENDANCES DOCKER] ********************************************************************
+2025-09-29 09:38:42,833 p=3587 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:38:42,837 p=3587 u=deploy n=ansible INFO| TASK [AJOUT CLE GPG DE DOCKER] ***********************************************************************
+2025-09-29 09:38:43,752 p=3587 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:38:43,755 p=3587 u=deploy n=ansible INFO| TASK [AJOUT DEPOT APT DE DOCKER] *********************************************************************
+2025-09-29 09:38:44,498 p=3587 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:38:44,503 p=3587 u=deploy n=ansible INFO| TASK [INSTALL DOCKER] ********************************************************************************
+2025-09-29 09:38:47,308 p=3587 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:38:47,311 p=3587 u=deploy n=ansible INFO| TASK [DEMARRE DOCKER] ********************************************************************************
+2025-09-29 09:38:48,081 p=3587 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:38:48,083 p=3587 u=deploy n=ansible INFO| PLAY RECAP *******************************************************************************************
+2025-09-29 09:38:48,083 p=3587 u=deploy n=ansible INFO| srv-apache-1               : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-09-29 09:39:34,569 p=3642 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] ***************************************************************
+2025-09-29 09:39:34,574 p=3642 u=deploy n=ansible INFO| TASK [Gathering Facts] *******************************************************************************
+2025-09-29 09:39:36,195 p=3642 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:39:36,198 p=3642 u=deploy n=ansible INFO| TASK [INSTALL DEPENDANCES DOCKER] ********************************************************************
+2025-09-29 09:39:39,085 p=3642 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:39:39,089 p=3642 u=deploy n=ansible INFO| TASK [AJOUT CLE GPG DE DOCKER] ***********************************************************************
+2025-09-29 09:39:40,042 p=3642 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:39:40,045 p=3642 u=deploy n=ansible INFO| TASK [AJOUT DEPOT APT DE DOCKER] *********************************************************************
+2025-09-29 09:39:40,779 p=3642 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:39:40,782 p=3642 u=deploy n=ansible INFO| TASK [INSTALL DOCKER] ********************************************************************************
+2025-09-29 09:39:43,704 p=3642 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:39:43,709 p=3642 u=deploy n=ansible INFO| TASK [DEMARRE DOCKER] ********************************************************************************
+2025-09-29 09:39:44,496 p=3642 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:39:44,500 p=3642 u=deploy n=ansible INFO| TASK [Create Apache container] ***********************************************************************
+2025-09-29 09:39:45,478 p=3642 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 09:39:45,480 p=3642 u=deploy n=ansible INFO| PLAY RECAP *******************************************************************************************
+2025-09-29 09:39:45,480 p=3642 u=deploy n=ansible INFO| srv-apache-1               : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
